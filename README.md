@@ -1,3 +1,15 @@
+---
+title: BeyondCV AI Ranking
+emoji: 🚀
+colorFrom: blue
+colorTo: purple
+sdk: gradio
+sdk_version: "6.19.0"
+python_version: "3.11"
+app_file: app.py
+pinned: false
+---
+
 # Candidate Ranking System for Redrob AI Recruiter Hackathon
 
 A production-grade AI recruiting system with semantic understanding, expanded feature engineering (70+ features), Learning-to-Rank, and two-stage retrieval for the Redrob Intelligent Candidate Discovery & Ranking Challenge.

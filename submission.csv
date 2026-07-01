@@ -1,0 +1,101 @@
+candidate_id,rank,score,reasoning
+CAND_0000229,1,0.967811,PhonePe's Senior Software Engineer (2.2 years) has proven Computer Vision capabilities at high-quality employers.
+CAND_0000001,2,0.957117,"Mindtree's Backend Engineer (6.9 years) has proven NLP capabilities at high-quality employers, though located in Toronto."
+CAND_0000031,3,0.949872,6.0 years as Recommendation Systems Engineer at Swiggy with demonstrated MLflow expertise.
+CAND_0000225,4,0.885608,"Analytics Engineer at Freshworks with 5.0 years of experience demonstrates expertise in FAISS, though based in Berlin, Germany."
+CAND_0000165,5,0.874012,6.8 years as AI Specialist at Mad Street Den with demonstrated BentoML expertise.
+CAND_0000273,6,0.867029,BYJU'S's ML Engineer (5.8 years) has proven TTS capabilities at high-quality employers.
+CAND_0000422,7,0.864938,6.3 years as AI Research Engineer at Haptik with demonstrated Python expertise.
+CAND_0000082,8,0.838332,"Experienced Data Analyst with 7.4 years at Wipro, specializing in GANs."
+CAND_0000354,9,0.835711,Analytics Engineer at Mindtree with 6.3 years of experience demonstrates expertise in scikit-learn with LoRA capabilities.
+CAND_0000014,10,0.827556,Zomato's Frontend Engineer (8.4 years) has proven FAISS capabilities at high-quality employers.
+CAND_0000227,11,0.822331,Stark Industries's Data Analyst (7.6 years) has proven Data Science capabilities at high-quality employers.
+CAND_0000178,12,0.797965,"Dunder Mifflin's Sales Executive (8.3 years) has proven gRPC capabilities at high-quality employers, though located in Toronto."
+CAND_0000280,13,0.763003,"Experienced Mobile Developer with 8.2 years at Flipkart, specializing in Weaviate with proven production ML systems experience."
+CAND_0000075,14,0.730274,Full Stack Developer at Wayne Enterprises with 5.2 years of experience demonstrates expertise in Machine Learning.
+CAND_0000131,15,0.721375,"With 4.8 years as Data Analyst, this candidate brings strong Feature Engineering experience from product company environments at upGrad."
+CAND_0000321,16,0.681002,"With 12.1 years as Business Analyst, this candidate brings strong CSS experience at Globex Inc."
+CAND_0000390,17,0.625285,"Backend Engineer at BYJU'S with 6.6 years of experience demonstrates expertise in GANs, though based in San Francisco, USA."
+CAND_0000110,18,0.618322,"Experienced Software Engineer with 9.8 years at Swiggy, specializing in Semantic Search."
+CAND_0000333,19,0.571032,"With 7.4 years as Software Engineer, this candidate brings strong JavaScript experience from product company environments at Swiggy."
+CAND_0000010,20,0.551268,"With 4.6 years as Data Engineer, this candidate brings strong GANs experience from product company environments at Ola."
+CAND_0000395,21,0.545196,Analytics Engineer at PhonePe with 3.8 years of experience demonstrates expertise in Statistical Modeling with Qdrant capabilities.
+CAND_0000352,22,0.429815,4.7 years as QA Engineer at Globex Inc with demonstrated Forecasting expertise.
+CAND_0000415,23,0.401827,"With 9.7 years as Accountant, this candidate brings strong CSS experience from product company environments at Globex Inc."
+CAND_0000341,24,0.395081,Sales Executive at Infosys with 12.4 years of experience demonstrates expertise in Java.
+CAND_0000442,25,0.372635,Hooli's Frontend Engineer (3.1 years) has proven YOLO capabilities at high-quality employers.
+CAND_0000307,26,0.356656,"With 6.8 years as QA Engineer, this candidate brings strong Computer Vision experience at Razorpay."
+CAND_0000343,27,0.112964,Accenture's Analytics Engineer (6.4 years) has proven Speech Recognition capabilities.
+CAND_0000209,28,0.091665,"With 10.3 years as Customer Support, this candidate brings strong Feature Engineering experience from product company environments at Pied Piper."
+CAND_0000360,29,0.084961,"8.6 years as Mobile Developer at Mphasis with demonstrated Qdrant expertise, based in London."
+CAND_0000025,30,0.058964,"Experienced Frontend Engineer with 7.3 years at Tech Mahindra, specializing in LangChain with proven production ML systems experience."
+CAND_0000200,31,0.058915,"Experienced ML Engineer with 4.3 years at Aganitha, specializing in Vector Search."
+CAND_0000045,32,0.058099,"Experienced Project Manager with 12.2 years at Initech, specializing in GCP with proven production ML systems experience."
+CAND_0000499,33,0.055151,Mechanical Engineer at Infosys with 11.0 years of experience demonstrates expertise in Airflow.
+CAND_0000172,34,0.049150,Marketing Manager at Acme Corp for 10.9 years brings CI/CD knowledge and limited contextual alignment.
+CAND_0000181,35,0.038286,Project Manager at TCS for 4.7 years brings Agile knowledge and limited contextual alignment.
+CAND_0000167,36,0.036552,"With 9.1 years as Business Analyst and Six Sigma experience, though skill coherence needs verification from Stark Industries."
+CAND_0000137,37,0.034975,Mechanical Engineer at Globex Inc for 10.9 years brings Sales knowledge and limited contextual alignment.
+CAND_0000277,38,0.034868,QA Engineer at Zomato for 2.1 years brings Reinforcement Learning knowledge and limited contextual alignment.
+CAND_0000114,39,0.033843,Sales Executive at Pied Piper for 14.3 years brings YOLO knowledge with some career pattern concerns and limited contextual alignment.
+CAND_0000015,40,0.029013,Software Engineer at Razorpay for 5.4 years brings PyTorch knowledge and limited contextual alignment.
+CAND_0000496,41,0.026827,"With 9.8 years as Marketing Manager and Apache Flink experience, though skill coherence needs verification from Acme Corp."
+CAND_0000454,42,0.023332,Data Analyst at Accenture for 5.8 years brings scikit-learn knowledge and limited contextual alignment.
+CAND_0000295,43,0.022966,Razorpay's Frontend Engineer (7.8 years) is based in Berlin.
+CAND_0000060,44,0.022500,Razorpay's Cloud Engineer (8.0 years) with limited production deployment evidence.
+CAND_0000489,45,0.022257,Wayne Enterprises's DevOps Engineer (3.9 years) with limited production deployment evidence.
+CAND_0000323,46,0.022142,Globex Inc's Civil Engineer (14.4 years) is based in London with limited production deployment evidence.
+CAND_0000023,47,0.021302,"With 3.7 years as Software Engineer and BigQuery experience, though skill coherence needs verification from Acme Corp."
+CAND_0000116,48,0.016937,"With 7.3 years as Full Stack Developer and LoRA experience, though skill coherence needs verification from Tech Mahindra."
+CAND_0000255,49,0.016747,"With 8.0 years as Cloud Engineer and Spring Boot experience, though skill coherence needs verification from Hooli."
+CAND_0000414,50,0.016262,"With 13.7 years as Business Analyst and Spark experience, though skill coherence needs verification from Initech."
+CAND_0000184,51,0.016212,"With 4.9 years as Software Engineer and Learning to Rank experience, though skill coherence needs verification with limited product company exposure from Flipkart."
+CAND_0000062,52,0.015933,"DevOps Engineer with 4.3 years of experience shows GANs skills, though location in Seattle may require relocation."
+CAND_0000466,53,0.015263,.NET Developer with 8.8 years of experience shows Data Pipelines skills.
+CAND_0000138,54,0.014087,Business Analyst at Wayne Enterprises for 8.3 years brings Spark knowledge and limited contextual alignment.
+CAND_0000247,55,0.012345,Infosys's Civil Engineer (10.2 years) is based in London.
+CAND_0000069,56,0.012308,Wayne Enterprises's Business Analyst (13.0 years).
+CAND_0000048,57,0.012223,CRED's Mobile Developer (9.7 years).
+CAND_0000411,58,0.012030,Vedantu's Analytics Engineer (2.8 years) with limited production deployment evidence.
+CAND_0000439,59,0.011957,"With 13.5 years as Accountant and TypeScript experience, though skill coherence needs verification from Globex Inc."
+CAND_0000158,60,0.011748,"With 4.4 years as Frontend Engineer and Elasticsearch experience, though skill coherence needs verification from Stark Industries."
+CAND_0000461,61,0.011674,"With 6.7 years as Java Developer and YOLO experience, though skill coherence needs verification from Zomato."
+CAND_0000216,62,0.011524,"With 6.0 years as Customer Support and gRPC experience, though skill coherence needs verification from Dunder Mifflin."
+CAND_0000302,63,0.011388,"With 7.4 years as Frontend Engineer and Image Classification experience, though skill coherence needs verification with limited product company exposure from Accenture."
+CAND_0000468,64,0.010725,Frontend Engineer with 5.0 years of experience shows LLMs skills.
+CAND_0000370,65,0.009798,Java Developer at Pied Piper for 5.9 years brings Data Science knowledge with some career pattern concerns and limited contextual alignment.
+CAND_0000067,66,0.009760,Frontend Engineer at Accenture for 3.9 years brings Weights & Biases knowledge and limited contextual alignment.
+CAND_0000345,67,0.009749,"Data Engineer with 4.3 years of experience with limited high-value skills, suggesting limited fit."
+CAND_0000450,68,0.009411,"Marketing Manager with 3.5 years of experience in unrelated engineering domains with limited high-value skills, suggesting limited fit."
+CAND_0000394,69,0.008755,"QA Engineer with 6.9 years of experience with limited high-value skills, suggesting limited fit."
+CAND_0000243,70,0.008643,"Java Developer with 5.7 years of experience in unrelated engineering domains with limited high-value skills, suggesting limited fit."
+CAND_0000267,71,0.008360,"Sales Executive with 3.3 years of experience in unrelated engineering domains with limited high-value skills, suggesting limited fit."
+CAND_0000063,72,0.008336,"Java Developer with 5.4 years of experience in unrelated engineering domains with limited high-value skills, suggesting limited fit."
+CAND_0000130,73,0.008269,"Cloud Engineer with 8.6 years of experience with limited high-value skills, suggesting limited fit."
+CAND_0000268,74,0.008226,"Graphic Designer with 11.3 years of experience in unrelated engineering domains with limited high-value skills, suggesting limited fit."
+CAND_0000417,75,0.008137,"Full Stack Developer with 7.8 years of experience with limited high-value skills, suggesting limited fit."
+CAND_0000049,76,0.008101,"Mechanical Engineer with 11.8 years of experience in unrelated engineering domains with limited high-value skills, suggesting limited fit."
+CAND_0000371,77,0.007794,TCS's Business Analyst (15.0 years) shows limited alignment with JD requirements and poor contextual match.
+CAND_0000398,78,0.007700,TCS's Operations Manager (10.0 years) shows limited alignment with JD requirements and poor contextual match.
+CAND_0000251,79,0.007598,Wayne Enterprises's Customer Support (11.4 years) shows limited alignment with JD requirements and poor contextual match.
+CAND_0000284,80,0.007597,Stark Industries's Graphic Designer (2.4 years) shows limited alignment with JD requirements and poor contextual match.
+CAND_0000201,81,0.007514,Stark Industries's Marketing Manager (14.1 years) shows limited alignment with JD requirements and poor contextual match.
+CAND_0000155,82,0.007237,Unacademy's Software Engineer (3.2 years) shows limited alignment with JD requirements and poor contextual match.
+CAND_0000157,83,0.007235,Wipro's Mechanical Engineer (3.1 years) shows limited alignment with JD requirements and poor contextual match.
+CAND_0000210,84,0.007189,upGrad's Senior Data Engineer (6.3 years) shows limited alignment with JD requirements and poor contextual match.
+CAND_0000226,85,0.007176,Globex Inc's Mechanical Engineer (3.5 years) shows limited alignment with JD requirements and poor contextual match.
+CAND_0000142,86,0.007015,Mphasis's Mobile Developer (5.1 years) shows limited alignment with JD requirements and poor contextual match.
+CAND_0000317,87,0.006993,"With 3.1 years as DevOps Engineer, skill coherence or evidence is limited."
+CAND_0000252,88,0.006985,"With 3.0 years as Business Analyst, skill coherence or evidence is limited."
+CAND_0000382,89,0.006917,"With 8.2 years as Civil Engineer, skill coherence or evidence is limited."
+CAND_0000458,90,0.006914,"With 8.0 years as Software Engineer, skill coherence or evidence is limited."
+CAND_0000027,91,0.006866,"With 3.9 years as DevOps Engineer, skill coherence or evidence is limited with limited product company experience."
+CAND_0000292,92,0.006857,"With 2.0 years as Data Analyst, making this a borderline fit."
+CAND_0000311,93,0.006818,"With 6.2 years as Project Manager, skill coherence or evidence is limited."
+CAND_0000465,94,0.006594,"With 11.2 years as Accountant, skill coherence or evidence is limited."
+CAND_0000492,95,0.006564,"With 14.2 years as Civil Engineer, skill coherence or evidence is limited."
+CAND_0000242,96,0.006520,"With 9.1 years as Project Manager, skill coherence or evidence is limited."
+CAND_0000162,97,0.006398,"With 13.8 years as Business Analyst, skill coherence or evidence is limited."
+CAND_0000427,98,0.006361,"With 2.6 years as DevOps Engineer, skill coherence or evidence is limited with limited product company experience."
+CAND_0000276,99,0.006315,"With 1.6 years as Marketing Manager, skill coherence or evidence is limited."
+CAND_0000190,100,0.006201,"With 3.7 years as Backend Engineer, making this a borderline fit."

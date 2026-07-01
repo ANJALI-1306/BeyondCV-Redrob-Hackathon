@@ -1,0 +1,83 @@
+============================================================================
+# Team identity
+# ============================================================================
+team_name: "Delulu Developer"  # Used in leaderboard and announcements
+
+primary_contact:
+  name: "ANJALI PARIKH"
+  email: "anjaliparikh1306@gmail.com"   # Used for all organizer communication
+  phone: "+91-7869217504"        # Used for top-50 / top-10 outreach
+
+team_members:
+  - name: "ANJALI PARIKH"
+    email: "anjaliparikh1306@gmail.com"
+          
+  - name: "AVIRAJ SINGH"
+    email: "avirajsingh25.2005@gmail.com"
+   
+  
+# ============================================================================
+# Code and reproducibility
+# ============================================================================
+github_repo: "https://github.com/YOUR_USERNAME/YOUR_REPO"
+# Required. Must be reachable. Private repos OK if you can grant organizer
+# access at Stage 3 (the email to add will be communicated then).
+
+sandbox_link: "https://huggingface.co/spaces/YOUR_USERNAME/redrob-ranker"
+# Required. A working hosted environment where the ranker can be run on a small
+# candidate sample. See Section 10.5 of submission_spec.md for acceptable
+# platforms (HuggingFace Spaces, Streamlit Cloud, Replit, Colab, Docker, Binder).
+
+reproduce_command:  "python rank.py --candidates dataset/candidates.jsonl --out submission.csv"
+# The single command that produces submission.csv from candidates.jsonl.
+# Should run end-to-end within 5 minutes on CPU with 16GB RAM and no network.
+
+# ============================================================================
+# Compute environment
+# ============================================================================
+compute:
+  platform:  "MSI Modern 15 B11M Laptop"                   # Or: "AWS EC2 c5.4xlarge", "Local Linux box", etc.
+  cpu_cores: 4                                  # Number of CPU cores used
+  ram_gb: 16                                    # Available RAM in GB
+  python_version: "3.11.9"                      # python --version
+  os: "Windows 11"                              # Or "Ubuntu 22.04 LTS", etc.
+  uses_gpu_for_inference: false                 # Must be false — see compute constraints
+  has_network_during_ranking: false             # Must be false — no API calls during ranking
+  pre_computation_required: true               # true if you pre-compute embeddings or train models offline
+  pre_computation_time_minutes: 20               # Approximate, if applicable
+
+# ============================================================================
+# AI tools declaration
+# ============================================================================
+Ai_tools_used:
+  - "Claude"
+  - "ChatGPT"
+
+Ai_usage_summary: |
+  ChatGPT and Claude were used during development for brainstorming,
+  debugging, code review, documentation improvements, and implementation
+  guidance. Final architecture, feature engineering, ranking logic,
+  and project integration were implemented, tested, and validated by the team.
+  No external AI service was used during candidate ranking or inference.
+# ============================================================================
+# Approach summary (optional but recommended)
+# ============================================================================
+methodology_summary: |
+  Two-stage AI candidate ranking pipeline using semantic retrieval,
+  74 explainable engineered features, and a LightGBM LambdaMART
+  Learning-to-Rank model. Candidate retrieval is first narrowed
+  using semantic embeddings, followed by detailed feature extraction,
+  LTR scoring, honeypot detection, behavioral signal integration,
+  and explainable reasoning generation. The system is fully CPU-based,
+  deterministic, and performs automatic internal and official validation
+  before producing the final submission.
+
+# ============================================================================
+# Declarations
+# ============================================================================
+declarations:
+  read_submission_spec: true        # I have read submission_spec.md in full
+  code_is_original_work: true       # My code is my team's original work (using AI as a tool is fine)
+  no_collusion: true                # I have not coordinated my submission with other teams
+  honeypot_check_done: true        # OPTIONAL — set true if you explicitly checked for honeypots in your ranking
+  reproduction_tested: true         # I have tested that my reproduce_command runs end-to-end

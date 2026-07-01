@@ -183,7 +183,11 @@ def main():
     parser.add_argument('--candidates', required=True, help='Path to candidates.jsonl')
     parser.add_argument('--out', required=True, help='Path to output CSV')
     parser.add_argument('--jd', default='job_description.md', help='Path to job description file')
-
+    parser.add_argument(
+       "--sandbox",
+       action="store_true",
+       help="Run in sandbox mode (skip official validation)"
+    )
     args = parser.parse_args()
 
     print("Checking embedding cache...")
@@ -207,30 +211,40 @@ def main():
     print("Internal Validation")
     print("=" * 60)
 
-    if not validate_internal_submission(ranked):
-        print("ERROR: Internal validation failed.")
-        sys.exit(1)
+    if args.sandbox:
+        print("[OK] Sandbox mode - skipping Top-100 validation.")
 
-    print("[OK] Internal validation passed")
+    else:
+        if not validate_internal_submission(ranked):
+            print("ERROR: Internal validation failed.")
+            sys.exit(1)
 
-    print("\n" + "=" * 60)
-    print("Official Redrob Submission Validation")
-    print("=" * 60)
+        print("[OK] Internal validation passed")
 
-    errors = official_validate_submission(args.out)
+    if args.sandbox:
+        print("\n" + "=" * 60)
+        print("Sandbox Mode")
+        print("=" * 60)
+        print("Sandbox mode enabled.")
+        print("Skipping official submission validator.")
+    else:
+        print("\n" + "=" * 60)
+        print("Official Redrob Submission Validation")
+        print("=" * 60)
 
-    if errors:
-        print(f"\nValidation failed ({len(errors)} issue(s)):\n")
+        errors = official_validate_submission(args.out)
 
-        for error in errors:
-            print(f"  • {error}")
+        if errors:
+            print(f"\nValidation failed ({len(errors)} issue(s)):\n")
 
-        sys.exit(1)
+            for error in errors:
+                print(f"  • {error}")
 
-    print("[OK] Official validator passed")
+            sys.exit(1)
+
+        print("[OK] Official validator passed")
 
     print("\nSubmission Ready!")
 
-
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

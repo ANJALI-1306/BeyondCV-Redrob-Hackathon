@@ -1,0 +1,101 @@
+candidate_id,rank,score,reasoning
+CAND_0018499,1,1.000000,Senior Machine Learning Engineer at Zomato with 7.2 years of experience demonstrates expertise in Deep Learning.
+CAND_0068811,2,1.000000,Applied ML Engineer at Freshworks with 8.0 years of experience demonstrates expertise in Vector Search.
+CAND_0058575,3,0.998575,"Experienced AI Engineer with 5.8 years at Krutrim, specializing in MLOps with proven production ML systems experience."
+CAND_0070398,4,0.984109,7.2 years as Machine Learning Engineer at Genpact AI with demonstrated Image Classification expertise.
+CAND_0005649,5,0.982347,Sarvam AI's Senior Data Scientist (7.4 years) has proven Haystack capabilities with solid production deployment evidence.
+CAND_0079064,6,0.977064,Niramai's Senior Data Scientist (5.2 years) has proven LlamaIndex capabilities with solid production deployment evidence.
+CAND_0066376,7,0.974376,5.7 years as Applied ML Engineer at Dream11 with demonstrated Recommendation Systems expertise.
+CAND_0088025,8,0.969218,8.6 years as Staff Machine Learning Engineer at Yellow.ai with demonstrated Pinecone expertise.
+CAND_0029367,9,0.967324,Rephrase.ai's Senior Data Scientist (5.7 years) has proven GANs capabilities with solid production deployment evidence.
+CAND_0041610,10,0.965334,Recommendation Systems Engineer at Zoho with 6.7 years of experience demonstrates expertise in OpenCV.
+CAND_0053695,11,0.964667,5.8 years as Recommendation Systems Engineer at Meesho with demonstrated MLOps expertise.
+CAND_0081846,12,0.964305,6.7 years as Lead AI Engineer at Razorpay with demonstrated Data Science expertise.
+CAND_0027691,13,0.963992,"Experienced NLP Engineer with 6.5 years at Haptik, specializing in LoRA with proven production ML systems experience."
+CAND_0071974,14,0.963322,"Experienced Senior AI Engineer with 7.8 years at Netflix, specializing in LoRA with proven production ML systems experience."
+CAND_0064326,15,0.963284,"Experienced Search Engineer with 7.6 years at Sarvam AI, specializing in scikit-learn with proven production ML systems experience."
+CAND_0015578,16,0.955974,AI Engineer at Zoho with 5.4 years of experience demonstrates expertise in Diffusion Models.
+CAND_0008425,17,0.955185,Senior NLP Engineer at Ola with 7.8 years of experience demonstrates expertise in Learning to Rank.
+CAND_0046064,18,0.952800,Salesforce's Senior NLP Engineer (8.9 years) has proven Python capabilities with solid production deployment evidence.
+CAND_0037566,19,0.952556,LinkedIn's Machine Learning Engineer (6.9 years) has proven Pinecone capabilities with solid production deployment evidence.
+CAND_0077285,20,0.951308,"With 5.5 years as Recommendation Systems Engineer, this candidate brings strong LoRA experience from Nykaa."
+CAND_0079387,21,0.951054,"With 6.9 years as AI Engineer, this candidate brings strong scikit-learn experience from Microsoft."
+CAND_0075249,22,0.950582,Applied ML Engineer at Zomato with 6.2 years of experience demonstrates expertise in Sentence Transformers.
+CAND_0055905,23,0.947021,"Flipkart's Senior Machine Learning Engineer (8.1 years) has proven Elasticsearch capabilities with solid production deployment evidence, though located in London."
+CAND_0027801,24,0.946082,"With 7.4 years as NLP Engineer, this candidate brings strong FAISS experience from InMobi."
+CAND_0075574,25,0.945782,Machine Learning Engineer at Haptik with 5.7 years of experience demonstrates expertise in Hugging Face Transformers.
+CAND_0065195,26,0.942764,CRED's Search Engineer (5.1 years) has proven LLMs capabilities with solid production deployment evidence.
+CAND_0011687,27,0.940206,Senior NLP Engineer at Niramai with 7.8 years of experience demonstrates expertise in TensorFlow.
+CAND_0086022,28,0.938224,"Experienced Senior Applied Scientist with 5.3 years at Sarvam AI, specializing in Vector Search with proven production ML systems experience."
+CAND_0028793,29,0.936762,"With 7.2 years as Search Engineer, this candidate brings strong Kubeflow experience from Google."
+CAND_0051292,30,0.936711,"With 5.2 years as Applied ML Engineer, this candidate brings strong pgvector experience from Freshworks."
+CAND_0077337,31,0.935781,Staff Machine Learning Engineer at Paytm with 7.0 years of experience demonstrates expertise in Semantic Search.
+CAND_0098846,32,0.930374,AI Engineer at upGrad with 7.6 years of experience demonstrates expertise in Hugging Face Transformers.
+CAND_0069905,33,0.928738,"Experienced Applied ML Engineer with 6.6 years at Sarvam AI, specializing in LoRA with proven production ML systems experience."
+CAND_0052328,34,0.926634,With 6.5 years as Recommendation Systems Engineer and LoRA experience from Amazon.
+CAND_0081852,35,0.921158,With 5.9 years as Senior Data Scientist and Semantic Search experience from Mad Street Den.
+CAND_0052335,36,0.920335,Applied ML Engineer with 6.4 years of experience shows Diffusion Models skills.
+CAND_0010257,37,0.920149,Senior Data Scientist with 6.5 years of experience shows Milvus skills.
+CAND_0053591,38,0.917966,Ola's AI Engineer (5.3 years) is based in Toronto.
+CAND_0006418,39,0.913250,Machine Learning Engineer at Verloop.io for 5.7 years brings Semantic Search knowledge.
+CAND_0017960,40,0.910793,Recommendation Systems Engineer with 7.7 years of experience shows LlamaIndex skills.
+CAND_0001610,41,0.906749,With 3.0 years as Machine Learning Engineer and Speech Recognition experience from Dream11.
+CAND_0046525,42,0.906525,With 6.1 years as Senior Machine Learning Engineer and Elasticsearch experience from Genpact AI.
+CAND_0041568,43,0.905033,"Search Engineer with 5.2 years of experience shows PEFT skills, though location in Sydney may require relocation."
+CAND_0096142,44,0.904586,Applied ML Engineer at upGrad for 5.0 years brings LoRA knowledge.
+CAND_0074225,45,0.901262,With 4.3 years as Machine Learning Engineer and Recommendation Systems experience from Unacademy.
+CAND_0011162,46,0.899421,Recommendation Systems Engineer at upGrad for 5.8 years brings FAISS knowledge.
+CAND_0061257,47,0.899257,Staff Machine Learning Engineer at LinkedIn for 8.0 years brings PEFT knowledge.
+CAND_0016163,48,0.898052,Applied ML Engineer at Dream11 for 6.7 years brings Hugging Face Transformers knowledge.
+CAND_0081053,49,0.896164,With 5.4 years as NLP Engineer and LoRA experience from Glance.
+CAND_0049896,50,0.895277,Search Engineer with 7.3 years of experience shows LangChain skills.
+CAND_0050454,51,0.893153,AI Engineer at Rephrase.ai for 6.8 years brings PyTorch knowledge.
+CAND_0044222,52,0.890264,AI Engineer with 7.7 years of experience shows Vector Search skills.
+CAND_0030468,53,0.889989,Senior Applied Scientist at Swiggy for 5.4 years brings Information Retrieval Systems knowledge.
+CAND_0093912,54,0.889912,Senior Data Scientist at Razorpay for 5.3 years brings Milvus knowledge.
+CAND_0095528,55,0.885589,Senior Data Scientist with 5.3 years of experience shows OpenSearch skills.
+CAND_0002025,56,0.883317,Senior AI Engineer at Apple for 5.9 years brings FAISS knowledge.
+CAND_0030348,57,0.881545,With 4.5 years as Machine Learning Engineer and LlamaIndex experience from BYJU'S.
+CAND_0051004,58,0.876658,With 4.7 years as Senior Data Scientist and Embeddings experience from CRED.
+CAND_0023541,59,0.870874,AI Specialist with 5.0 years of experience shows Elasticsearch skills.
+CAND_0042506,60,0.867659,Verloop.io's Search Engineer (4.2 years).
+CAND_0041669,61,0.864484,Recommendation Systems Engineer at CRED for 8.0 years brings FAISS knowledge.
+CAND_0099806,62,0.862417,Mad Street Den's AI Engineer (4.6 years).
+CAND_0006567,63,0.858186,Senior AI Engineer at Meta for 7.9 years brings scikit-learn knowledge.
+CAND_0083879,64,0.856296,With 7.1 years as Machine Learning Engineer and Fine-tuning LLMs experience from Ola.
+CAND_0040887,65,0.852663,Netflix's Machine Learning Engineer (4.7 years) is based in Toronto.
+CAND_0036184,66,0.849547,Recommendation Systems Engineer at CRED for 6.0 years brings QLoRA knowledge.
+CAND_0030827,67,0.846827,"With 5.4 years as Senior Data Scientist, making this a borderline fit."
+CAND_0070485,68,0.843285,"Search Engineer with 6.4 years of experience, suggesting limited fit."
+CAND_0018549,69,0.841903,"With 6.8 years as Recommendation Systems Engineer, making this a borderline fit."
+CAND_0022463,70,0.836463,"With 6.5 years as Junior ML Engineer, making this a borderline fit."
+CAND_0039838,71,0.835130,"Recommendation Systems Engineer with 4.9 years, making this a borderline fit."
+CAND_0076831,72,0.834685,"Search Engineer with 4.0 years of experience, suggesting limited fit."
+CAND_0084819,73,0.832032,Dream11's Search Engineer (4.5 years) shows limited alignment with JD requirements.
+CAND_0076251,74,0.830270,"Search Engineer with 7.6 years, making this a borderline fit."
+CAND_0088441,75,0.818622,"AI Specialist with 6.5 years of experience, suggesting limited fit."
+CAND_0093193,76,0.817693,Niramai's Senior Machine Learning Engineer (7.9 years) shows limited alignment with JD requirements.
+CAND_0010408,77,0.817012,Meesho's Junior ML Engineer (5.7 years) shows limited alignment with JD requirements.
+CAND_0078002,78,0.815573,"Machine Learning Engineer with 6.3 years, making this a borderline fit."
+CAND_0015493,79,0.814586,"Data Scientist with 6.4 years of experience, suggesting limited fit."
+CAND_0060468,80,0.812593,BYJU'S's Computer Vision Engineer (6.4 years) shows limited alignment with JD requirements.
+CAND_0052195,81,0.811450,"With 6.3 years as Computer Vision Engineer, making this a borderline fit."
+CAND_0066999,82,0.810428,"Recommendation Systems Engineer with 5.9 years, making this a borderline fit."
+CAND_0096131,83,0.809114,"AI Specialist with 5.3 years of experience, suggesting limited fit."
+CAND_0080344,84,0.808144,"Senior Software Engineer (ML) with 4.9 years of experience, suggesting limited fit."
+CAND_0004402,85,0.808035,"AI Research Engineer with 6.0 years of experience, suggesting limited fit."
+CAND_0062247,86,0.807969,Google's AI Engineer (7.3 years) shows limited alignment with JD requirements.
+CAND_0005477,87,0.807810,Zomato's ML Engineer (6.2 years) shows limited alignment with JD requirements.
+CAND_0068410,88,0.807605,Unacademy's Senior Software Engineer (ML) (5.8 years) shows limited alignment with JD requirements.
+CAND_0007412,89,0.807412,Zoho's Applied ML Engineer (7.4 years) shows limited alignment with JD requirements.
+CAND_0009691,90,0.807061,LinkedIn's Applied ML Engineer (6.2 years) shows limited alignment with JD requirements.
+CAND_0006557,91,0.806520,"With 7.9 years as NLP Engineer, making this a borderline fit."
+CAND_0057701,92,0.805391,"Recommendation Systems Engineer with 4.1 years, making this a borderline fit."
+CAND_0095457,93,0.803300,"Data Scientist with 4.1 years of experience, suggesting limited fit."
+CAND_0035315,94,0.802815,Zoho's Data Scientist (4.9 years) shows limited alignment with JD requirements.
+CAND_0018722,95,0.801250,"With 6.6 years as Recommendation Systems Engineer, making this a borderline fit."
+CAND_0053605,96,0.800313,"Senior Software Engineer (ML) with 6.9 years, making this a borderline fit."
+CAND_0042029,97,0.800000,"Senior Data Scientist with 6.5 years, making this a borderline fit."
+CAND_0054394,98,0.799838,"Recommendation Systems Engineer with 4.1 years of experience, suggesting limited fit."
+CAND_0032216,99,0.797866,upGrad's ML Engineer (6.1 years) shows limited alignment with JD requirements.
+CAND_0073007,100,0.795528,"AI Specialist with 5.8 years, making this a borderline fit."

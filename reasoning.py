@@ -3,43 +3,21 @@ from typing import Dict, Any
 
 
 def generate_reasoning(features: Dict[str, Any], score: float, candidate: Dict[str, Any] = None, tier: str = None) -> str:
-    
-    if candidate:
-        profile = candidate.get('profile', {})
-        career_history = candidate.get('career_history', [])
-        skills = candidate.get('skills', [])
-        redrob_signals = candidate.get('redrob_signals', {})
-        
-        current_title = profile.get('current_title', 'Unknown')
-        current_company = profile.get('current_company', 'Unknown')
-        years_of_experience = profile.get('years_of_experience', 0)
-        location = profile.get('location', 'Unknown')
-        country = profile.get('country', 'Unknown')
-        willing_to_relocate = redrob_signals.get('willing_to_relocate', False)
 
-        best_skill = None
-        for skill in skills:
-            if skill.get('proficiency') in ['expert', 'advanced'] and skill.get('duration_months', 0) > 0:
-                best_skill = skill.get('name')
-                break
-        if not best_skill and skills:
-            best_skill = skills[0].get('name')
+    if not candidate:
+        return "Candidate profile data unavailable for reasoning generation."
 
-        rare_skills_list = []
-        rare_skill_keywords = ['rag', 'fine-tuning', 'lora', 'qlora', 'peft', 'vector database', 'pinecone', 'weaviate', 'qdrant', 'milvus']
-        for skill in skills:
-            skill_name = skill.get('name', '').lower()
-            if any(rare in skill_name for rare in rare_skill_keywords):
-                rare_skills_list.append(skill.get('name'))
-    else:
-        current_title = "Unknown"
-        current_company = "Unknown"
-        years_of_experience = 0
-        location = "Unknown"
-        country = "Unknown"
-        willing_to_relocate = False
-        best_skill = None
-        rare_skills_list = []
+    profile = candidate.get('profile', {})
+    career_history = candidate.get('career_history', [])
+    skills = candidate.get('skills', [])
+    redrob_signals = candidate.get('redrob_signals', {})
+
+    current_title = profile.get('current_title', 'Unknown')
+    current_company = profile.get('current_company', 'Unknown')
+    years_of_experience = profile.get('years_of_experience', 0)
+    location = profile.get('location', 'Unknown')
+    country = profile.get('country', 'Unknown')
+    willing_to_relocate = redrob_signals.get('willing_to_relocate', False)
 
     title_fit = features['title_role_fit_score']
     exp_fit = features['experience_fit_score']
@@ -64,143 +42,67 @@ def generate_reasoning(features: Dict[str, Any], score: float, candidate: Dict[s
         else:
             tier = 'low'
 
-    template_seed = int((score * 1000) + (years_of_experience * 100)) % 5
-    
-    reasoning = ""
+    parts = []
+
+    parts.append(f"{current_title} at {current_company} with {years_of_experience} years of experience")
+
+    top_skills = []
+    for skill in skills[:5]:
+        if skill.get('proficiency') in ['expert', 'advanced']:
+            top_skills.append(skill.get('name'))
+    if top_skills:
+        parts.append(f"demonstrates expertise in {', '.join(top_skills[:3])}")
+
+    if skill_coherence >= 0.7:
+        parts.append("with strong skill coherence and career evidence")
+    elif skill_coherence < 0.4:
+        parts.append("with limited skill coherence evidence")
+
+    if production_seniority >= 0.7:
+        parts.append("and proven production deployment capabilities")
+    elif production_seniority < 0.4:
+        parts.append("with limited production deployment evidence")
+
+    if semantic_similarity >= 0.6:
+        parts.append("showing strong contextual alignment with JD requirements")
+    elif semantic_similarity < 0.3:
+        parts.append("with weak contextual match to job requirements")
 
     if tier == 'high':
-        if template_seed == 0:
-            reasoning = f"{current_title} at {current_company} with {years_of_experience} years of experience"
-            if best_skill:
-                reasoning += f" demonstrates expertise in {best_skill}"
-            if rare_skills_list:
-                reasoning += f" with {rare_skills_list[0]} capabilities"
-            if semantic_similarity > 0.7:
-                reasoning += " and strong contextual alignment with JD requirements"
-            if location_fit < 0.6:
-                reasoning += f", though based in {location}, {country}"
-            reasoning += "."
-        elif template_seed == 1:
-            reasoning = f"With {years_of_experience} years as {current_title}, this candidate"
-            if best_skill:
-                reasoning += f" brings strong {best_skill} experience"
-            if domain_experience > 0.7:
-                reasoning += " from product company environments"
-            reasoning += f" at {current_company}"
-            if engagement_score > 0.8:
-                reasoning += " with high platform engagement"
-            if location_fit < 0.6 and willing_to_relocate:
-                reasoning += " and is open to relocation"
-            reasoning += "."
-        elif template_seed == 2:
-            reasoning = f"{current_company}'s {current_title} ({years_of_experience} years)"
-            if best_skill:
-                reasoning += f" has proven {best_skill} capabilities"
-            if skill_coherence >= 0.7:
-                reasoning += " with solid production deployment evidence"
-            if employer_quality > 0.7:
-                reasoning += " at high-quality employers"
-            if location_fit < 0.6:
-                reasoning += f", though located in {location}"
-            reasoning += "."
-        elif template_seed == 3:
-            reasoning = f"Experienced {current_title} with {years_of_experience} years at {current_company}"
-            if best_skill:
-                reasoning += f", specializing in {best_skill}"
-            if production_seniority >= 0.7:
-                reasoning += " with proven production ML systems experience"
-            if semantic_similarity > 0.6:
-                reasoning += " and strong semantic match to role requirements"
-            reasoning += "."
-        else:
-            reasoning = f"{years_of_experience} years as {current_title} at {current_company}"
-            if best_skill:
-                reasoning += f" with demonstrated {best_skill} expertise"
-            if rare_skill_score > 0.5:
-                reasoning += " including rare high-value skills"
-            if location_fit < 0.6:
-                reasoning += f", based in {location}"
-            reasoning += "."
-
+        if domain_experience >= 0.7:
+            parts.append("in relevant AI/ML domains")
+        if employer_quality >= 0.7:
+            parts.append("at high-quality product companies")
+        if engagement_score >= 0.8:
+            parts.append("with strong platform engagement")
     elif tier == 'medium':
-        if template_seed == 0:
-            reasoning = f"{current_title} with {years_of_experience} years of experience"
-            if best_skill:
-                reasoning += f" shows {best_skill} skills"
-            if semantic_similarity > 0.5:
-                reasoning += " with reasonable contextual alignment"
-            if location_fit < 0.6:
-                reasoning += f", though location in {location} may require relocation"
-            if behavioral_multiplier < 0.7:
-                reasoning += " with recent inactivity affecting availability"
-            reasoning += "."
-        elif template_seed == 1:
-            reasoning = f"With {years_of_experience} years as {current_title}"
-            if best_skill:
-                reasoning += f" and {best_skill} experience"
-            if skill_coherence < 0.5:
-                reasoning += ", though skill coherence needs verification"
-            if domain_experience < 0.5:
-                reasoning += " with limited product company exposure"
-            reasoning += f" from {current_company}."
-        elif template_seed == 2:
-            reasoning = f"{current_company}'s {current_title} ({years_of_experience} years)"
-            if location_fit < 0.6:
-                reasoning += f" is based in {location}"
-            if production_seniority < 0.5:
-                reasoning += " with limited production deployment evidence"
-            if engagement_score < 0.5:
-                reasoning += " and moderate platform engagement"
-            reasoning += "."
-        else:
-            reasoning = f"{current_title} at {current_company} for {years_of_experience} years"
-            if best_skill:
-                reasoning += f" brings {best_skill} knowledge"
-            if disqualifier_penalty < -0.1:
-                reasoning += " with some career pattern concerns"
-            if semantic_similarity < 0.4:
-                reasoning += " and limited contextual alignment"
-            reasoning += "."
-
+        if domain_experience < 0.5:
+            parts.append("with limited domain-specific experience")
+        if employer_quality < 0.5:
+            parts.append("primarily at consulting/service companies")
+        if behavioral_multiplier < 0.7:
+            parts.append("and recent inactivity affecting availability")
     else:
-        if template_seed == 0:
-            reasoning = f"{current_title} with {years_of_experience} years"
-            if title_fit < 0.5:
-                reasoning += " has limited role alignment with target AI/ML engineering position"
-            if semantic_similarity < 0.3:
-                reasoning += " and weak contextual match to JD"
-            if location_fit < 0.6:
-                reasoning += f" and is based in {location}"
-            reasoning += ", making this a borderline fit."
-        elif template_seed == 1:
-            reasoning = f"With {years_of_experience} years as {current_title}"
-            if skill_coherence < 0.3:
-                reasoning += ", skill coherence or evidence is limited"
-            if behavioral_multiplier < 0.5:
-                reasoning += " and recent platform inactivity affects availability"
-            if employer_quality < 0.3:
-                reasoning += " with limited product company experience"
-            if not (skill_coherence < 0.3 or behavioral_multiplier < 0.5):
-                reasoning += ", making this a borderline fit"
-            reasoning += "."
-        elif template_seed == 2:
-            reasoning = f"{current_company}'s {current_title} ({years_of_experience} years)"
-            if honeypot_flag:
-                reasoning += " has profile inconsistencies requiring verification"
-            else:
-                reasoning += " shows limited alignment with JD requirements"
-            if semantic_similarity < 0.3:
-                reasoning += " and poor contextual match"
-            reasoning += "."
-        else:
-            reasoning = f"{current_title} with {years_of_experience} years of experience"
-            if title_fit < 0.3:
-                reasoning += " in unrelated engineering domains"
-            if rare_skill_score < 0.2:
-                reasoning += " with limited high-value skills"
-            reasoning += ", suggesting limited fit."
+        if title_fit < 0.5:
+            parts.append("showing limited alignment with Senior AI Engineer role")
+        if exp_fit < 0.4:
+            parts.append(f"with experience outside the target 5-9 year band")
+        if honeypot_flag:
+            parts.append("and profile inconsistencies requiring verification")
+        if behavioral_multiplier < 0.5:
+            parts.append("with concerning platform inactivity patterns")
 
-    if not reasoning or len(reasoning) < 10:
-        reasoning = f"{current_title} with {years_of_experience} years shows limited alignment with JD requirements."
+    if location_fit >= 0.7:
+        parts.append(f"based in {location}")
+    elif location_fit < 0.6:
+        if willing_to_relocate:
+            parts.append(f"currently in {location} but willing to relocate")
+        else:
+            parts.append(f"based in {location} with relocation concerns")
+
+    reasoning = '; '.join(parts) + '.'
+
+    if len(reasoning) > 300:
+        reasoning = reasoning[:297] + '...'
 
     return reasoning

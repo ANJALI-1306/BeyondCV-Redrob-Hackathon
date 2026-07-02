@@ -1,5 +1,6 @@
 from typing import Dict, Any, List
 import os
+import hashlib
 
 
 def compute_score_manual(features: Dict[str, Any], candidate_id: str = "") -> float:
@@ -59,8 +60,11 @@ def compute_score_manual(features: Dict[str, Any], candidate_id: str = "") -> fl
     base_clipped = max(min(base, 1.0), 0.0)
 
     if candidate_id:
-        id_num = int(candidate_id.split('_')[1])
-        tiebreaker = (id_num % 10000) * 0.000001
+        
+        
+        digest = hashlib.md5(candidate_id.encode("utf-8")).hexdigest()
+        stable_hash = int(digest[:8], 16)
+        tiebreaker = (stable_hash % 10000) * 0.000001
         base_clipped += tiebreaker
 
     base_clipped = max(min(base_clipped, 1.0), 0.0)

@@ -25,3 +25,5 @@ dataset/candidates.jsonl
 
 # Development scripts
 dev/
+
+ltr_model.pkl

@@ -1,4 +1,13 @@
-# Candidate Ranking System for Redrob AI Recruiter Hackathon
+# BeyondCV – AI Candidate Ranking System for Redrob AI Recruiter Hackathon
+
+## Key Features
+- Two-stage retrieval (Semantic Search + Feature Ranking)
+- 70+ engineered features
+- Deterministic ranking
+- Explainable candidate reasoning
+- Honeypot detection
+- Official Redrob validator compliant
+
 
 A production-grade AI recruiting system with semantic understanding, expanded feature engineering (70+ features), Learning-to-Rank, and two-stage retrieval for the Redrob Intelligent Candidate Discovery & Ranking Challenge.
 
@@ -85,7 +94,6 @@ REDROB/ │
 ├── reasoning.py
 ├── embeddings.py
 ├── ltr.py
-├── ltr_model.pkl
 ├── evaluation.py
 ├── benchmark.py
 ├── requirements.txt
